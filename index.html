@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de juguetes </title>
+    <style>
+        body {
+            font-family: H1;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url:"C:\Users\Alumno\Downloads\descarga.png"
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color:pink;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .moving-title {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            animation: moveTitle 10s linear infinite;
+        }
+
+        @keyframes moveTitle {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .menu {
+            background-color:#C39BD3;
+            overflow: hidden;
+        }
+
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: red;
+            color: black;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .logo img {
+            width: 40%;
+            height: auto;
+        }
+
+        .productos {
+            margin: 20px;
+        }
+
+        .producto {
+            background-color: pink;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .producto img {
+            width: 40%;
+            height: auto;
+            border-radius: 1px;
+        }
+
+        .producto p {
+            font-size: 18px;
+            color: blue;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .cta button {
+            background-color:#A3E4D7;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cta button:hover {
+            background-color: #ff9900;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .formulario {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .formulario input, .formulario textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .formulario button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .formulario button:hover {
+            background-color: #ff9900;
+        }
+
+        .links {
+            margin: 20px;
+        }
+
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin: 10px 0;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .tabla-productos {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .tabla-productos table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tabla-productos td, .tabla-productos th {
+            border: 1px solid #C39BD3 ;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .tabla-productos img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .tabla-productos ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .tabla-productos li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="moving-title">juguetes </h1>
+    </header>
+    <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+    <div class="logo">
+        <img src="C:\Users\Alumno.SALA1-07\Downloads\logo.avif" alt="Logo">
+    </div>
+    <section class="productos" id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="producto">
+            <img src="C:\Users\Alumno.SALA1-07\Downloads\9999.jpg" alt="Pantalla LED 1">
+            <p> juguete de colores $250</p>
+        </div>
+        <div class="producto">
+            <img src="C:\Users\Alumno.SALA1-07\Downloads\999.jpg" alt="Pantalla LED 2">
+            <p>caballito de madera$620</p>
+        </div>
+        <div class="producto">
+            <img src="C:\Users\Alumno.SALA1-07\Downloads\333.jpg" alt="Pantalla LED 3">
+            <p>pato de colores$450</p>
+        </div>
+        <div class="producto">
+            <img src="C:\Users\Alumno.SALA1-07\Downloads\888.jpg" alt="Pantalla LED 4">
+            <p>cangrejo$200</p>
+        </div>
+    </section>
+    <div class="cta">
+        <button>¡Compra Ahora!</button>
+    </div>
+    <div class="formulario" id="contacto">
+        <h2>Contacto</h2>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button>Enviar</button>
+    </div>
+    <section class="links" id="links">
+        <h2>Links Útiles</h2>
+        <ul>
+            <li><a href="https://shop.mattel.com/es-mx/collections/precio?utm_source=GADS&utm_medium=RSEA&utm_campaign=DESCUENTOS&utm_term=MTL&utm_content=DESCUENTOSGENERALES&utm_source_platform=GADS&utm_creative_format=RSA&utm_marketing_tactic=TRF&utm_audience=GG&utm_data_type=3P&gad_source=1&gclid=EAIaIQobChMIkd_k06jiiwMV06_uAR3bbTRiEAAYASAAEgI9kfD_BwE."target="_blank">Ofertas de juguetes </a></li>
+            <li><a href="https://www.liverpool.com.mx/tienda/juguetes/cat1080656" target="_blank">tienda de juguetes</a></li>
+        </ul>
+    </section>
+    <div class="tabla-productos">
+        <table>
+            <tr>
+                <th>Imagen</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><img src="C:\Users\Alumno.SALA1-07\Downloads\9999.jpg" alt="Producto 1"></td>
+                <td><ul><li>Este producto cuenta con 6 tubos de coles grandes y pequeños </li></ul></td>
+            </tr>
+            <tr>
+                <td><img src="C:\Users\Alumno.SALA1-07\Downloads\999.jpg "alt="Producto 2"></td>
+                <td><ul><li>Este es de madera en donde los niños se pueden subir </li></ul></td>
+            </tr>
+            <tr>
+                <td><img src="C:\Users\Alumno.SALA1-07\Downloads\333.jpg" alt="Producto 3"></td>
+                <td><ul><li>Este jueguete es para escuchar sonido de bebes </li></ul></td>
+            </tr>
+            <tr>
+                <td><img src="C:\Users\Alumno.SALA1-07\Downloads\888.jpg" alt="Producto 4"></td>
+                <td><ul><li>Este cangerjo es para que los niños precionen los botones y se pueda escuchar el sonido</li></ul></td>
+            </tr>
+        </table>
+    </div>
+        <h2>Uso de comandos para acentos</h2>
+        <ol>
+            <li>&aacute; - á</li>
+            <li>&eacute; - é</li>
+            <li>&iacute; - í</li>
+            <li>&oacute; - ó</li>
+            <li>&uacute; - ú</li>
+            <li>&Aacute; - Á</li>
+            <li>&Eacute; - É</li>
+            <li>&Iacute; - Í</li>
+            <li>&Oacute; - Ó</li>
+            <li>&Uacute; - Ú</li>
+            <li>&ntilde; - ñ</li>
+            <li>&Ntilde; - Ñ</li>
+        </ol>
+    </section>
+</footer>
+
+    <footer class="footer">
+        <p>© 2025 venta de juguetes .</p>
+    </footer>
+    </body>
+</html>
